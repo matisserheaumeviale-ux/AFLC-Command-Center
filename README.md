@@ -1,5 +1,3 @@
-# AFLC-Command-Center
-Système AFLC multi-cartes avec STM32 Master, PIC16F88 Safety Node, STM32 Fan Node, logiciel PC, protocole série maison, PWM fan, lecture RPM, failsafe et instrumentation NI.
 # AFLC Command Center
 
 AFLC Command Center est un projet embarqué multi-cartes basé sur STM32, PIC16F88 et un logiciel PC.
