@@ -12,6 +12,9 @@ def build_command(user_input):
     if cmd == "status":
         return "@STATUS?;"
 
+    if cmd == "id":
+        return "@ID?;"
+
     if cmd == "safe":
         return "@PIC:SAFE?;"
 

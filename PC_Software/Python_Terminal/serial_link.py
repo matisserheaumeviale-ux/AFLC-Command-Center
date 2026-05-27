@@ -1,3 +1,4 @@
+import time
 import serial
 import serial.tools.list_ports
 
@@ -11,6 +12,9 @@ class SerialLink:
 
     def connect(self, port, baudrate=19200, timeout=1):
         self.ser = serial.Serial(port=port, baudrate=baudrate, timeout=timeout)
+        time.sleep(0.2)
+        self.ser.reset_input_buffer()
+        self.ser.reset_output_buffer()
         return self.ser.is_open
 
     def disconnect(self):
@@ -27,6 +31,7 @@ class SerialLink:
         if not message.endswith(";"):
             message += ";"
 
+        self.ser.reset_input_buffer()
         self.ser.write(message.encode("utf-8"))
         self.ser.flush()
 

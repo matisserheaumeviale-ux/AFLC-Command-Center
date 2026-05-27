@@ -1,0 +1,32 @@
+# Default text handling
+* text=auto
+
+# STM32 / C source
+*.c text eol=lf
+*.h text eol=lf
+*.s text eol=lf
+*.ld text eol=lf
+Makefile text eol=lf
+
+# Python
+*.py text eol=lf
+
+# Markdown / docs
+*.md text eol=lf
+*.txt text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.bin binary
+*.elf binary
+*.hex binary

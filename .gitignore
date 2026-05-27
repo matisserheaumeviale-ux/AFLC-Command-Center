@@ -26,7 +26,7 @@ build/
 # STM32CubeIDE
 .settings/
 .metadata/
-
+.mxproject
 # MPLAB X
 dist/
 build/
@@ -40,3 +40,24 @@ History/
 __Previews__/
 *.SchDocPreview
 *.PcbDocPreview
+# STM32 build outputs
+Firmware/**/build/
+Firmware/**/Debug/
+Firmware/**/Release/
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.o
+*.d
+
+# CubeMX large optional middleware/libs not used
+Firmware/**/Drivers/CMSIS/DSP/
+Firmware/**/Drivers/CMSIS/NN/
+Firmware/**/Drivers/CMSIS/RTOS/
+Firmware/**/Drivers/CMSIS/RTOS2/
+Firmware/**/Drivers/CMSIS/docs/
+
+# Misc
+!!!NOTES!!!

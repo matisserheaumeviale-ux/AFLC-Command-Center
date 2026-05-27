@@ -28,3 +28,21 @@ PIC16F88 : souvent 5 V
 - GND commun
 - protection entrée RX STM32 si PIC en 5 V
 - diviseur de tension ou level shifter
+PC Terminal
+  |
+  | USART1 19200
+  | PA9/PA10
+  v
+STM32 Master
+  |
+  | USART2 19200
+  | PA2/PA3
+  v
+PIC16F88 Safety Node
+
+STM32 Master
+  |
+  | I2C1 100 kHz
+  | PB6/PB7
+  v
+STM32 Fan Node

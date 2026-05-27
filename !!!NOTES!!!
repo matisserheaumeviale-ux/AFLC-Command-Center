@@ -1,0 +1,17 @@
+À prévoir physiquement :
+
+PB6 SCL → pull-up 4.7 kΩ vers 3.3 V
+PB7 SDA → pull-up 4.7 kΩ vers 3.3 V
+GND commun
+
+Pin	Fonction future
+PA6	FAN1_PWM possible
+PA7	FAN2_PWM possible
+PB0	FAN3_PWM possible
+PB1	FAN4_PWM possible
+PA0	FAN1_TACH possible
+PA1	FAN2_TACH possible
+PB8	FAN3_TACH possible
+PB9	FAN4_TACH possible
+
+J’ai déplacé FAN3/FAN4 tach vers PB8/PB9 parce que PA2/PA3 sont maintenant utilisés par USART2 vers le PIC.
